@@ -1,0 +1,422 @@
+html,body{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	padding:0px;
+	margin:0px;	
+	color:#FFF;
+	background:#231f20;
+}
+.container{
+	position: relative;
+	padding:0px;
+	margin:0px;
+
+}
+
+.logo-site img{
+	border:none;	
+	outline:none;
+}
+a{
+	text-decoration:none;	
+	color:#DDD;
+}
+
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+
+
+.c,.c5,.c10,.c15,.c20,.c30,.c3,.c2{
+	clear:both;	
+}
+.c{
+	height:1px;	
+}
+.c2{
+	height:2px;	
+}
+.c3{
+	height:3px;	
+}
+.c5{
+	height:5px;	
+}
+.c10{
+	height:10px;	
+}
+.c15{
+	height:15px;	
+}
+.c20{
+	height:20px;	
+}
+.c30{
+	height:30px;	
+}
+
+#menubottom{
+	position:fixed; 
+	bottom:0px;
+	padding:0px;
+	margin:0px;
+	width:100%; 
+	z-index:999999;
+}
+#menubottom .content{
+
+}
+.menubottom,.crumb{
+	/*
+	background:url(../images/bgmenu.png) !important;
+	*/
+	background:url(../images/bgmenu1.png) !important;
+	height:40px;	
+	width:100%;	
+	z-index:9999;
+	padding:0px;
+	margin:0px;
+}
+.menubottom,.crumb .crumbtext{
+	line-height:40px;	
+}
+.crumb .crumbtext a{
+	color:#FFF;
+	text-decoration:none;	
+}
+.crumb .crumbtext a:last-child{
+	color:#ffa600;
+	font-weight:bold;
+}
+
+.menubottom li{
+	float:left;
+	line-height:40px;
+	list-style:none;
+
+}
+.menubottom li a{
+	text-decoration:none;
+	color:#fff;
+	margin:0px 20px;	
+	
+}
+.menubottom li.active a,.menubottom li a:hover{
+	color:#ffa600;
+}
+.menubottom li.search{
+	float:right;	
+}
+.child{
+	width:100%;
+	height:90px;
+	padding:5px 0px;
+	display:none;
+}
+.child > div{
+	background:url(../images/bgmenu.png);
+	height:100%;
+	
+}
+.child ul{
+	width:420px;
+	padding:0px;
+	margin:0px;
+	
+}
+.child  li{
+	float:left;
+	width:200px;
+	line-height:normal;
+	list-style:none;
+}
+.child li a{
+	text-decoration:none;
+	color:#fff;
+	display:inherit;
+	padding:2px 0px;
+
+}
+.child li a:hover{
+	color:#ffa600;	
+}
+.logo-site{
+	position:fixed;
+	width:112px;
+	height:112px;
+	top:20px;
+	left:20px;
+	z-index:99999;	
+}
+.divcrumb{
+	padding:3px 0px;		
+}
+.divcrumb{
+		
+}
+.content-page{
+	margin-top:0px;
+	margin-left:250px;
+	background:url(../images/bgcontent.png);	
+	color:#FFF;
+	padding:20px;
+	max-width:600px;
+	line-height:20px;
+	
+}
+.box-search-bottom{
+	background:url(../images/bgmenu1.png);
+	height:150px;
+	margin-top:5px ;
+	display:none;
+}
+.keyword{
+	width:100%;
+	height:22px;
+	border:solid 1px #ffa600;	
+	background:#FFF;
+	opacity:0.9;
+	padding-left:2px;
+	margin:10px 10px 0px 0px;
+}
+
+.binh_thumb{
+	display:inline-block;
+	text-align:center;
+	width:100%;
+	padding-top:5px;	
+}
+.binh_thumb img{
+	margin:0px 2px;	
+}
+.info-project-detail{
+	width:300px;	
+	background:url(../images/bgmenu1.png);
+	height:100%;
+	right:0px;
+	top:0px;
+	position:absolute;
+	z-index:99999;
+	font-size:12px;
+
+}
+.clshide{
+	display:none;	
+}
+#showinfoproject{
+	color:#FFF;
+	text-decoration:none;	
+	line-height:28px;
+}
+
+
+
+.project-hover{
+        position: absolute; 
+        top: 0px ; 
+        left: 0px; 
+        width: 100%; 
+        height: 100%; 
+        background: #000; 
+        opacity: 0.5;
+
+}
+
+.project-name{
+	padding: 0px;
+	margin: 0px;
+	font-size: 16px;
+
+}
+
+.project-name a{
+	color: #ffa600;
+	text-decoration: none;
+}
+
+.province{
+	font-size: 11px;
+}
+
+
+
+.item {
+	width:100%;
+
+	/* required to hide the image after resized */
+	overflow:hidden;
+
+	/* for child absolute position */
+	position:relative;
+
+	/* display div in line */
+	float:left;
+}
+
+.caption {
+	width:100%;
+	height:100%;
+	background:#000;
+	color:#fff;
+	font-weight:bold;
+	padding: 60px 0px 0px 25px;
+	/* fix it at the bottom */
+	position:absolute;
+	left:0px;
+	top:0px;
+	/* hide it by default */
+	/* opacity setting */
+	filter:alpha(opacity=80);    /* ie  */
+	-moz-opacity:0.8;    /* old mozilla browser like netscape  */
+	-khtml-opacity: 0.8;    /* for really really old safari */  
+	opacity: 0.8;    /* css standard, currently it works in most modern browsers like firefox,  */
+	display:none;
+}
+
+.caption a {
+	text-decoration:none;
+	color:#ffa600;
+	font-size:16px;	
+
+	/* add spacing and make the whole row clickable*/
+	display:block;
+}
+.caption a:hover {
+	display:block;
+}
+.project-item img {
+	border:0;
+	display:block;
+	height:100%;
+  width:100%;
+
+}    
+
+
+.contact-address{
+	position: fixed;    bottom: 140px;    width: 90%; left: 12%;    line-height: 22px;
+}
+
+.contact-img{
+	margin: 0px 100px 0px 100px;
+}
+
+.news-name{
+	font-size:14px;
+	padding:0px;
+	margin:0px;	
+	color:#ffa600;
+	padding-bottom:5px;
+}
+.news-name a{
+	text-decoration:none;
+	color:#ffa600;	
+}
+.news-detail-name{
+	font-size:16px;	
+	color:#ffa600;
+	padding:0px 0px 10px 0px; 
+}
+.news-detail-intro{
+	font-size:14px;	
+}
+.other-article{
+	padding:0px 0px 0px 15px;	
+}
+.other-article a{
+	color:#FFF;
+	text-decoration:none;	
+}
+.other-article a:hover{
+	color:#ffa600;
+}
+
+.title{
+	font-size:16px;	
+	margin:0px;
+	padding:0px;
+	color:#ffa600;
+	text-transform: uppercase; 
+	font-weight: bold; 	
+}
+.content-zone{
+	/*
+	background:url(/images/bgcontent.png); padding:20px 0px 20px 20px;	
+	*/
+}
+
+.copyright {
+	
+position: fixed;
+left: -95px;
+left: 0px\9;
+bottom: 220px;
+
+/* Safari */
+-webkit-transform: rotate(-90deg);
+/* Firefox */
+-moz-transform: rotate(-90deg);
+/* IE */
+-ms-transform: rotate(-90deg);
+/* Opera */
+-o-transform: rotate(-90deg);
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+z-index:997;
+font-size:12px;
+}
+.duan-detail{
+margin:0px;
+padding:0px;
+color:#ffa600;
+font-size:20px;	
+}
+
+.content-detail{
+	
+}
+
+.content-detail a{
+	text-decoration:none;
+	color:#ffa600;
+}
+
+.slogan{
+	/*
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	*/
+	font-family: Arial;
+    font-size: 25px;
+	position: fixed;
+	left: 130px;
+	top: 220px;
+	z-index:998;
+
+}
+.slogan-line{
+	position: fixed;
+	left: 130px;
+	top: 255px;
+	z-index:998;
+    border-bottom: solid 1px #FF9B00;
+	width:150px;
+	height:1px;
+}
+
+.crumbtext{
+	margin-left:230px;	
+}
+.content-text div{
+	max-width:100%;
+}
+.intro-duan-detail{
+	padding-bottom:40px;	
+}
+.project-padleft-project{
+	padding-bottom:20px;	
+}
+

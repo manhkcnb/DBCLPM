@@ -1,0 +1,47 @@
+/* CSS Document */
+#menubottom .content{
+	width:100%;
+	
+}
+
+.child{
+	width:100%;
+	padding:5px 0px;
+	display:none;	
+	bottom:0px;
+		
+}
+.child > div{
+	background:url(../images/bgmenu1.png);
+	height:100%;
+	
+}
+.child ul{
+	width:100%;
+	width:420px;
+	padding:0px;
+	margin:0px;
+	
+}
+.child  li{
+	float:left;
+	width:200px;
+	line-height:normal;
+	list-style:none;
+}
+.child li a{
+	text-decoration:none;
+	color:#fff;
+	display:inherit;
+	padding:2px 0px;
+
+}
+.child li a:hover{
+	color:#ffa600;	
+}
+
+.child > div.nobackground{
+	background:none !important;
+	
+}
+
